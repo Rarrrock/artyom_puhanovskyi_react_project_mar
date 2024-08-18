@@ -36,7 +36,12 @@ const SearchInput = () => {
                     render={({ field }) => (
                         <FormItem>
                             <FormControl>
-                                <Input placeholder="Search ..." {...field} />
+                                {/* Здесь добавляем классы text-black и dark:text-white */}
+                                <Input
+                                    placeholder="Search ..."
+                                    {...field}
+                                    className="text-black dark:text-white"
+                                />
                             </FormControl>
                         </FormItem>
                     )}

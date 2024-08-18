@@ -1,6 +1,5 @@
-'use client'
 import {getDiscoverMovies} from "@/lib/getMovies";
-import HeroCarosel from "@/components/HeroCarosel";
+import HeroCarousel from "@/components/HeroCarosel";
 
 interface Props {
     id?: string;
@@ -10,7 +9,7 @@ interface Props {
 const CaroselBanner = async ({ id, keywords }: Props) => {
     const movies = await getDiscoverMovies(id, keywords);
 
-    return <HeroCarosel movies={movies} />;
+    return <HeroCarousel movies={movies} />;
 };
 
 export default CaroselBanner;

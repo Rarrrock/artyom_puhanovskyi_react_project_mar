@@ -11,15 +11,7 @@ interface Props {
 }
 
 const HeroCarousel = ({ movies }: Props) => {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [Autoplay()]);
-
-    useEffect(() => {
-        if (emblaApi) {
-            console.log("Embla API initialized:", emblaApi);
-            // Вы можете использовать методы emblaApi здесь для управления каруселью.
-        }
-    }, [emblaApi]);
-
+    const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
     return (
         <div className="overflow-hidden cursor-pointer relative" ref={emblaRef}>
             <div className="flex">

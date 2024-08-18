@@ -1,15 +1,13 @@
 import {Movie} from "@/type";
-import Image from "next/image";
-import React from "react";
 import Link from "next/link";
 import MovieCard from "@/components/MovieCard";
 import {cn} from "@/lib/utils";
 
-type Props={
-    title?:string;
+type Props = {
+    title?: string;
     movies: Movie[];
     isVertical?: boolean;
-}
+};
 
 const MovieContainer = ({ title, movies, isVertical }: Props) => {
     return (
