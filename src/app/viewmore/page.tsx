@@ -1,14 +1,13 @@
 import {getNowPlayingMovies, getPopularMovies, getTopRatedMovies, getUpcomingMovies} from "@/lib/getMovies";
 import MovieContainer from "@/components/MovieContainer";
 
-
-interface Props {
+interface IProps {
     searchParams: {
         title: string;
     };
 }
 
-const ViewMorePage = async ({ searchParams: { title } }: Props) => {
+const ViewMorePage = async ({ searchParams: { title } }: IProps) => {
     let movies: any = null;
 
     if (title === "Now Playing") {

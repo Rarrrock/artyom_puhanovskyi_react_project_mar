@@ -1,5 +1,5 @@
 'use client'
-import {Movie} from "@/type";
+import {Movie} from "@/modules/type";
 import {getImagePath} from "@/lib/getImagePath";
 import Image from "next/image";
 import {useRouter} from "next/navigation";

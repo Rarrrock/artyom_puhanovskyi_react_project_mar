@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import {Videos} from "@/type";
+import {Videos} from "@/modules/type";
 import YouTube, {YouTubeProps} from "react-youtube";
 
 const VideoPlayer = ({ videos }: Videos) => {

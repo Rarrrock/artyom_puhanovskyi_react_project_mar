@@ -1,4 +1,4 @@
-import {Movie} from "@/type";
+import {Movie} from "@/modules/type";
 import Link from "next/link";
 import MovieCard from "@/components/MovieCard";
 import {cn} from "@/lib/utils";

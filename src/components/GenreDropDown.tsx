@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
-import { Genres } from "../type";
+import { Genres } from "../modules/type";
 
 const GenreDropDown = () => {
     const [genres, setGenres] = useState<Genres | null>(null);

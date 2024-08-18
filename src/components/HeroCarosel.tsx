@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
-import { Movie } from "@/type";
+import { Movie } from "@/modules/type";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";

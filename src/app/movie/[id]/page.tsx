@@ -6,14 +6,13 @@ import Image from "next/image";
 import VideoPlayer from "@/components/VideoPlayer";
 import MovieContainer from "@/components/MovieContainer";
 
-
-interface Props {
+interface IProps {
     params: {
         id: string;
     };
 }
 
-const MovieDetails = async ({ params: { id } }: Props) => {
+const MovieDetails = async ({ params: { id } }: IProps) => {
     const movies = await getMovieVideos(id);
     const videos = movies.map((movie: any) => ({
         id: movie.id,

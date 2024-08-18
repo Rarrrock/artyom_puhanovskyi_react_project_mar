@@ -1,4 +1,4 @@
-import {SearchResults} from "@/type";
+import {SearchResults} from "@/modules/type";
 
 const fetcher = async (url: URL, cacheTime?: number) => {
     url.searchParams.set("include_adult", "false");

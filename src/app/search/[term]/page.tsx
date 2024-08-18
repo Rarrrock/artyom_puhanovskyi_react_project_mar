@@ -1,13 +1,13 @@
 import {getPopularMovies, getSearchedMovies} from "@/lib/getMovies";
 import MovieContainer from "@/components/MovieContainer";
 
-interface Props {
+interface IProps {
     params: {
         term: string;
     };
 }
 
-const SearchPage = async ({ params: { term } }: Props) => {
+const SearchPage = async ({ params: { term } }: IProps) => {
     const termToUse = decodeURI(term);
 
     const movies = await getSearchedMovies(termToUse);

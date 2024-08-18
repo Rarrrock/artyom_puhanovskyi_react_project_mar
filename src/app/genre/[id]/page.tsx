@@ -1,7 +1,7 @@
 import {getDiscoverMovies} from "@/lib/getMovies";
 import MovieContainer from "@/components/MovieContainer";
 
-interface Props {
+interface IProps {
     params: {
         id: string;
     };
@@ -13,7 +13,7 @@ interface Props {
 const GenrePage = async ({
                              params: { id },
                              searchParams: { genre },
-                         }: Props) => {
+                         }: IProps) => {
     const movies = await getDiscoverMovies(id);
     return (
         <div className="py-10 max-w-screen-xl mx-auto">
